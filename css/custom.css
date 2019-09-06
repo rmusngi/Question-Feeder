@@ -1,0 +1,69 @@
+body {
+    background-color: #ebf2f7!important;
+}
+.sg-header {
+    margin-bottom: 0!important;
+
+}
+
+
+.subjects {
+    margin-top: 50px;
+    margin-left: -150px;
+}
+.subject-left {
+    padding: 10px;
+}
+
+.subject-icon {
+    display: inline;
+    vertical-align: -30%
+}
+
+.subject-name {
+    display: inline-block;
+    vertical-align: 0.5px;
+}
+
+.intro-message {
+    width: 800px
+}
+
+.description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    margin-left: -150px;
+}
+
+.main-contentbox {
+    background-color: #ebf2f7!important;
+}
+.box-content {
+    width: 900px!important;
+}
+
+.question-queue  {
+    margin-top: 30px;
+    width: 800px
+}
+
+.question-individual {
+    border: none!important;
+    margin-bottom: 20px;
+}
+
+.question-text .sg-text {
+    line-height: 1.5;
+    padding: 10px;
+
+}
+
+.question-cta {
+    margin-top: 30px;
+}
+
+
+
