@@ -53,8 +53,8 @@ body {
 .question-individual {
     border: none!important;
     margin-bottom: 20px;
+   
 }
-
 .question-text .sg-text {
     line-height: 1.5;
     padding: 10px;
@@ -63,6 +63,10 @@ body {
 
 .question-cta {
     margin-top: 30px;
+}
+
+.sg-box {
+     width: 800px !important
 }
 
 
