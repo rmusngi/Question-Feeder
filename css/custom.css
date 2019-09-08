@@ -7,6 +7,10 @@ body {
 }
 
 
+.subject-drop {
+    display: none;
+}
+
 .subjects {
     margin-top: 50px;
     margin-left: -150px;
@@ -45,6 +49,13 @@ body {
     width: 900px!important;
 }
 
+.sg-spinner {
+    width: 16px!important;
+    height: 16px!important;
+    margin-right: 10px;
+
+}
+
 .question-queue  {
     margin-top: 30px;
     width: 800px
@@ -69,5 +80,86 @@ body {
      width: 800px !important
 }
 
+/*Responsive Design*/
 
+@media (max-width: 1024px) {
+   .subjects {
+       margin-top: 50px;
+       margin-left: 20px;
+       width: 300px;
+    }
+    
+    .main-content {
+        margin-left: 10px;
+    }
 
+    .intro-message {
+        width: 600px;
+    }
+
+    .question-individual {
+        width: 600px!important;
+    }
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .subjects {
+        display:none;
+    }
+
+    .subject-drop {
+        margin-top: 50px;
+        margin-left: 40px;
+
+    }
+
+    .main-content {
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .sg-header__right {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 20px;
+    }
+
+    .intro-message {
+        width: 350px;
+        padding: 15px;
+    }
+
+    .description {
+        margin-bottom: -5x;
+    }
+
+    .question-individual {
+        width: 350px!important;
+        margin-right: 20px;
+        display: block;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .intro-message {
+        width: 300px;
+        padding: 15px;
+    }
+    .question-individual {
+        width: 300px!important;
+
+    }
+    .question-text {
+        margin-top: 25px;
+    }
