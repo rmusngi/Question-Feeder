@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <!--Brainly StyleGuide-->
-    <link rel="icon" type="image/x-icon" href="https://styleguide.brainly.ph/images/favicons/brainly/favicon-0c2222f36b.ico">
-    <link href="https://styleguide.brainly.com/149.0.0/style-guide.css" rel="stylesheet" />
-    <!--End of Styleguide-->
-    <!--Custom CSS-->
-    <link href="css\custom.css" rel="stylesheet" />
-    <!--End of Custom CSS-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TSR Feed PH</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Brainly StyleGuide-->
+    <link rel="icon" type="image/x-icon"
+        href="https://styleguide.brainly.ph/images/favicons/brainly/favicon-0c2222f36b.ico">
+    <link href="https://styleguide.brainly.com/149.0.0/style-guide.css" rel="stylesheet" />
+    <!--End of Styleguide-->
+    <link href="css/style.css" rel="stylesheet">
     <!--TableTop-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script type='text/javascript'>
@@ -28,88 +29,82 @@
         }
         window.addEventListener('DOMContentLoaded', init)
     </script>
+    <title>TSR Project Feed</title>
 </head>
-
-<body>
-    <!--NAVBAR-->
-    <header class="sg-header">
-        <div class="sg-header__container">
-            <div class="sg-header__content">
-                <div class="sg-header__left"><a href="#" class="sg-home-button"><img class="sg-home-button__logo-small"
-                            src="https://styleguide.brainly.com/images/logos/brainly-mobile-426ef8718f.svg"><img
-                            class="sg-home-button__logo-big"
-                            src="https://styleguide.brainly.com/images/logos/brainly-761d75d6ea.svg"></a></div>
-                <div class="sg-header__middle">
-
-                </div>
-                <div class="sg-hide-for-small-only">
-                    <div class="sg-header__right">
-
-                    </div>
-                </div>
-                <div class="sg-hide-for-medium-up">
-                    <div class="sg-header__right"><button role="button"
-                            class="sg-icon-as-button sg-icon-as-button--light sg-icon-as-button--normal">
-                            <div class="sg-icon-as-button__hole">
-                                <div class="sg-icon sg-icon--adaptive sg-icon--x26"><svg class="sg-icon__svg">
-                                        <use xlink:href="#icon-menu"></use>
-                                    </svg></div>
-                            </div>
-                        </button></div>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <div class="sg-header__content">
+            <div class="sg-header__left"><a href="#" class="sg-home-button"><img class="sg-home-button__logo-small"
+                        src="https://styleguide.brainly.com/images/logos/brainly-mobile-426ef8718f.svg"><img
+                        class="sg-home-button__logo-big"
+                        src="https://styleguide.brainly.com/images/logos/brainly-761d75d6ea.svg"></a></div>
+            <div class="sg-header__middle">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="intro sg-text-bit sg-text-bit--xlarge">PLANT A TREE <br> WITH BRAINLY</h1>
+        <p class="text-center sg-text description"> Join our community's effort into saving the environment. With this
+            initiative, we are planning to plant one tree for every 100 questions you answer. So join us in our own
+            little way in helping Mother Earth</p>
+        <div class="text-center">
+            <button class="cta-button sg-button sg-button--primary-mint docs-button-hovered--primary-mint"><span
+                    class="sg-button__text">Answer Now!</span></button>
+        </div>
+    </div>
+</div>
+<!--Main Questions-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="subject-drop">
+                <div class="sg-select level-select">
+                    <div class="sg-select__icon"></div><select class="sg-select__element">
+                        <option value="option1">All Subjects</option>
+                        <option value="option1">Filipino</option>
+                        <option value="option1">Math</option>
+                        <option value="option1">AP</option>
+                        <option value="option1">All Subjects</option>
+                        <option value="option1">Science</option>
+                        <option value="option1">Physics</option>
+                        <option value="option1">Chemistry</option>
+                        <option value="option1">Biology</option>
+                        <option value="option1">History</option>
+                        <option value="option1">Geography</option>
+                        <option value="option1">ESP</option>
+                        <option value="option1">Economics</option>
+                        <option value="option1">TLE</option>
+                        <option value="option1">Integrated Science</option>
+                        <option value="option1">Health</option>
+                        <option value="option1">Art</option>
+                        <option value="option1">PE</option>
+                        <option value="option1">Religion</option>
+                        <option value="option1">Computer</option>
+                    </select>
                 </div>
             </div>
-        </div>
-    </header>
-    <!--End Navbar-->
-    <!--Main-->
-    <div class="sg-layout sg-layout--three-columns">
-        <div
-            class="sg-layout__container sg-layout__container--no-max-width sg-layout__container--no-margin-top feed-layout">
-            <div class="sg-layout__secondary-content">
-                <div class="subject-drop">
-                    <div class="sg-select level-select">
-                        <div class="sg-select__icon"></div><select class="sg-select__element">
-                            <option value="option1">All Subjects</option>
-                            <option value="option1">Filipino</option>
-                            <option value="option1">Math</option>
-                            <option value="option1">AP</option>
-                            <option value="option1">All Subjects</option>
-                            <option value="option1">Science</option>
-                            <option value="option1">Physics</option>
-                            <option value="option1">Chemistry</option>
-                            <option value="option1">Biology</option>
-                            <option value="option1">History</option>
-                            <option value="option1">Geography</option>
-                            <option value="option1">ESP</option>
-                            <option value="option1">Economics</option>
-                            <option value="option1">TLE</option>
-                            <option value="option1">Integrated Science</option>
-                            <option value="option1">Health</option>
-                            <option value="option1">Art</option>
-                            <option value="option1">PE</option>
-                            <option value="option1">Religion</option>
-                            <option value="option1">Computer</option>
-                        </select>
-                    </div>
+            <div class="subjects">
+                <div class="subject-left"><a href="index.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-all"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">All subjects</div>
+                        </div>
+                    </a>
                 </div>
-                <div class="subjects">
-                    <div class="subject-left"><a href="index.html">
-                            <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
-                                    <use xlink:href="#icon-subject-all"></use>
-                                </svg></div>
-                            <div class="subject-name">
-                                <div class="sg-text sg-text--small sg-text--gray sg-text--bold">All subjects</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="subject-left"><a href="filipino.html">
-                            <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
-                                    <use xlink:href="#icon-subject-language"></use>
-                                </svg></div>
-                            <div class="subject-name">
-                                <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Filipino</div>
-                        </a>
-                    </div>
+                <div class="subject-left"><a href="filipino.html">
+                        <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
+                                <use xlink:href="#icon-subject-language"></use>
+                            </svg></div>
+                        <div class="subject-name">
+                            <div class="sg-text sg-text--small sg-text--gray sg-text--bold">Filipino</div>
+                    </a>
                 </div>
                 <div class="subject-left"><a href="math.html">
                         <div class="subject-icon"><svg class="sg-subject-icon sg-subject-icon--small">
@@ -281,57 +276,66 @@
                     </a>
                 </div>
             </div>
+
         </div>
-        <div class="sg-layout__content main-content">
-            <div class="sg-layout__box box-content main-contentbox">
-                <div class="sg-layout__box intro-message sg-box--with-shadow">
-                    <h1 class="sg-text-bit sg-text-bit--blue-primary title-message">Plant a Tree with Brainly!</h1>
-                    <div class="sg-text sg-text--to-left description">For every 10 answers you post, Brainly will be
-                        planting one tree!</div>
-                    <button class="sg-button-primary sg-button-primary--alt readme">Learn more</button>
-                </div>
-                <!--<div class="sg-select level-select">
-                   <div class="sg-select__icon"></div><select class="sg-select__element">
-                       <option value="option1">Grade School</option>
-                       <option value="option1">Junior High School</option>
-                       <option value="option1">Senior High School</option>
-                       <option selected="" value="option2">All Levels</option>
-                   </select>
-               </div>-->
-                <div class="question-queue">
-
-
-
-
-
-                </div>
-                <div class="sg-spinner-container" id="spinner">
-                    <div class="sg-spinner sg-spinner"></div><span class="span-loading">LOADING QUESTIONS</span>
-                </div>
-
+    </div>
+    <div class="col-md-8">
+        <div class="list-q">
+            <div class="question-queue">
             </div>
-            <button class="sg-button-primary sg-button-primary--alt readme" id="loadMore">Load More</button>
+            <div class="sg-spinner-container" id="spinner">
+                <div class="sg-spinner sg-spinner"></div><span class="span-loading">LOADING QUESTIONS</span>
+            </div>
+            <button class="sg-button-primary sg-button-primary--alt" id="loadMore">Load More</button>
         </div>
+    </div>
+    <div class="col-md-2">
+        <div class="data">
+            <div class="sg-box sg-box--no-border sg-box--full sg-box--no-min-height sg-box--with-shadow">
+                <div class="sg-box__hole"><img src="img\tree.png" height="100px" alt="">
+                <div class="stats"><h1 class="sg-text sg-text-bit sg-text-bit--medium">Join the cause</h1>
+                <p class="sg-text">Join our community in saving the environment</p></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            
+        <div class="col-sm">
         
-
-    </div>
-    <div class="sg-layout__footer">
-        <div class="sg-footer__container">&copy; <a href="rudolphmusngi.com" target="_blank">GreatGatsby</a> | <a href="https://brainly.ph" target="_blank">Brainly PH</a> </div>
-        <div class="sg-footer">
+            
         </div>
     </div>
-    </div>
-    <!--End Main-->
+</div>
+<div class="col-sm">
+    <h2>hi</h2>-->
 
-    <!--Braily Scripts-->
+
+<body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!--Brainly Scripts-->
     <script src="https://styleguide.brainly.com/images/icons-36daf88c55.js"></script>
     <script src="https://styleguide.brainly.com/images/subjects-icons-a01adb2d40.js"></script>
     <script src="https://styleguide.brainly.com/images/subjects-mono-icons-341dc27120.js"></script>
     <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+
     <script src="js/scoreboard.js"></script>
     <script src="js/tabletop.js"></script>
-    <script src="js/load.js"></script>
+    <script src="js/loader.js"></script>
 </body>
 
 </html>

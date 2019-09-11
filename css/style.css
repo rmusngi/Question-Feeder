@@ -1,60 +1,95 @@
 body {
-    background-color: #f6f6f6;
-    width: 400px;
-    margin: 20px auto;
-    font: normal 13px/100% sans-serif;
-    color: #444;
+    margin: 0;
+    background: #ebebeb;
 }
 
-.contents {
+.jumbotron {
+    background: url('header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 95vh;
+    border-radius: 0!important;
+
+}
+
+.intro {
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.description {
+    margin-top: 100px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cta-button {
+    margin-top: 50px;
+}
+
+.subject-drop {
     display: none;
+}
+
+.subjects {
+    margin-top: 20px;
+}
+
+.subject-left {
     padding: 10px;
-    border-width: 0 1px 1px 0;
-    border-style: solid;
-    border-color: #fff;
-    box-shadow: 0 1px 1px #ccc;
-    margin-bottom: 5px;
-    background-color: #f1f1f1;
 }
 
-.totop {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
+.subject-icon {
+    display: inline;
+    vertical-align: 1%;
+    margin-left: 5px;
 }
 
-.totop a {
+.subject-name {
+    display: inline-block;
+    vertical-align: 0.5px;
+}
+
+.list-q {
+    margin-top: 20px;
+    width: 500px;
+}
+
+.question-individual {
+    margin-bottom: 20px!important;
+    border: none;
+    width:600px;
+
+}
+.brainly-questions {
     display: none;
 }
 
-a,
-a:visited {
-    color: #33739E;
-    text-decoration: none;
-    display: block;
-    margin: 10px 0;
-}
+.sg-spinner {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 10px;
 
-a:hover {
-    text-decoration: none;
 }
 
 #loadMore {
-    padding: 10px;
-    text-align: center;
-    background-color: #33739E;
-    color: #fff;
-    border-width: 0 1px 1px 0;
-    border-style: solid;
-    border-color: #fff;
-    box-shadow: 0 1px 1px #ccc;
-    transition: all 600ms ease-in-out;
-    -webkit-transition: all 600ms ease-in-out;
-    -moz-transition: all 600ms ease-in-out;
-    -o-transition: all 600ms ease-in-out;
+    margin-top: 20px;
 }
 
-#loadMore:hover {
-    background-color: #fff;
-    color: #33739E;
+.data {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: -100px;
+}
+
+.data h1 {
+    text-align: center;
+}
+
+.data p{
+    margin-top: 20px;
+    text-align: center;
 }
