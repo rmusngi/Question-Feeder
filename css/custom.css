@@ -71,7 +71,7 @@ body {
 
 }
 
-.brainly-questions {
+.brainly-questions:nth-child(6+n) {
     display: none;
 }
 
