@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background: #ebebeb;
+    overflow-x : hidden!important;
 }
 
 .jumbotron {
@@ -96,10 +97,32 @@ body {
 }
 
 /*Responsive Design*/
+/*Laptop - 1024px*/
 
+@media (max-width: 1150px) {
+    body {
+        overflow-x: hidden;
+    }
 
-/*Tablet - 768px*/
-@media (max-width: 768px) {
+    .subjects {
+        text-align: left;
+        width: 200px;
+    }
+
+    .question-individual{
+        width: 500px;
+    }
+
+    .data {
+        width: 250px;
+    }
+}
+
+/*Tablet - 990px*/
+@media (max-width: 990px) {
+    .intro {
+        margin-top: -10px;
+    }
     .navbar-toggler{
         display: none;
     }
@@ -129,14 +152,18 @@ body {
 
     
     }
+    .question-individual {
+        width: 80vw;
+        margin-left: -5vw;
+    }
 
     .data {
         display: none;
     }
 }
 
-/*Mobile- 425px*/
-@media (max-width: 425px) {
+/*Mobile- 760px*/
+@media (max-width: 767px) {
     .intro {
         margin-top: -10px;
     }
@@ -151,42 +178,49 @@ body {
     }
 
     .question-individual {
-        width: 350px;
+        width: 70vw;
     }
 
 }
 
-/*MobileM - 375px*/
-@media (max-width: 375px) {
+/*MobileM - 520px*/
+@media (max-width: 520px) {
     body, html{
         overflow-x: hidden!important;
     }
     .intro{
         margin-left: -3px;
+        margin-top: -5px;
     }
 
+    .cta-button {
+        margin-top: 10px;
+    }
     .list-q {
         margin-left: 10px;
     }
 
     .question-individual {
-        width: 300px;
-        margin-left: 0;
+        width: 80vw;
+        margin-left: 2vw;
     }
-/*MobileS - 320px*/
-@media (max-width: 325px) {
+/*MobileS - 377px*/
+@media (max-width: 378px) {
     .intro {
         font-size: 60px!important;
         
     }
     .question-individual {
-        width: 250px;
+        width: 70vw;
+        margin-left: 5vw;
     }
 
     .question-text {
         padding: 30px 10px;
     }
-
+    .cta-button{
+        display: none;
+    }
     #spinner {
         display: block;
     }
