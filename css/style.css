@@ -9,28 +9,49 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 95vh;
+    height: 60vh;
     border-radius: 0!important;
 
 }
 
+.share-button {
+    display: none;
+}
+
+
 .intro {
-    margin-top: 150px;
+    margin-top: 10px;
     text-align: center;
     color: #fff;
 }
 
+.plant-tree {
+    margin-top: 30px;
+}
+
 .description {
-    margin-top: 100px;
+    margin-top: 50px;
     color: #fff;
     font-size: 25px;
     text-align: center;
 }
 
 .cta-button {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
+.how-it-works {
+    text-align: center;
+}
+
+.tutorial-cards {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    height: 145px!important;
+}
 .subject-drop {
     display: none;
 }
@@ -104,10 +125,36 @@ body {
         overflow-x: hidden;
     }
 
+    .jumbotron {
+        height: 50vh;
+    }
+
+    .intro {
+        font-size:45px;
+        line-height: 1;
+        margin-top: -45px;
+    }
+
+    .plant-tree {
+        margin-top: 5px;
+    }
+
+    .description {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+
     .subjects {
         text-align: left;
         width: 200px;
     }
+
+    .tutorial-cards {
+        margin-bottom: 50px;
+    }
+
+    
 
     .question-individual{
         width: 500px;
@@ -125,8 +172,23 @@ body {
     }
     .navbar-toggler{
         display: none;
+      
     }
 
+    .tutorial-cards {
+        display: block;
+    }
+    .card {
+        width: 60vw;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-left: 5vw;
+    }
+
+    .share-button {
+        display: block;
+        margin-left: 26vw;
+    }
     .subject-area {
         display: block;
         text-align: center;
@@ -153,8 +215,8 @@ body {
     
     }
     .question-individual {
-        width: 80vw;
-        margin-left: -5vw;
+        width: 60vw;
+        margin-left: 1vw;
     }
 
     .data {
@@ -165,7 +227,7 @@ body {
 /*Mobile- 760px*/
 @media (max-width: 767px) {
     .intro {
-        margin-top: -10px;
+        margin-top: -30px;
     }
 
     .description {
@@ -207,12 +269,16 @@ body {
 /*MobileS - 377px*/
 @media (max-width: 378px) {
     .intro {
-        font-size: 60px!important;
+        font-size: 30px!important;
         
     }
     .question-individual {
         width: 70vw;
         margin-left: 5vw;
+    }
+
+    .card {
+        width: 85vw;
     }
 
     .question-text {
