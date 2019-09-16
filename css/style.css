@@ -4,6 +4,9 @@ body {
     overflow-x : hidden!important;
 }
 
+a { 
+    text-decoration: none!important;
+}
 .jumbotron {
     background: url('header.jpg');
     background-size: cover;
@@ -38,6 +41,15 @@ body {
 
 .cta-button {
     margin-top: 20px;
+}
+
+.cta-button a {
+    color: #fff;
+    text-decoration:none;
+}
+
+.cta-button a:hover {
+    color:#fff;
 }
 
 .how-it-works {
@@ -101,7 +113,14 @@ body {
     margin-top: 20px;
     margin-bottom: 50px;
 }
+.answer-question a:hover { 
+    color: #fff;
+    text-decoration: none;
+}
 
+.answer-question a {
+    color: #fff;
+}
 .data {
     width: 300px;
     margin-top: 20px;
@@ -117,12 +136,45 @@ body {
     text-align: center;
 }
 
+#top-btn {
+    position: fixed;
+    top: 90vh;
+    z-index: 1000;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+
+}
+
+#top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#top-btn:active, #top-btn:hover{
+    outline: none;
+    
+}
+
+.share-fb {
+    margin-top: 30px;
+}
+
+.share-fb a:hover, .share-fb a:active, .share-fb a {
+    outline: none;
+}
 /*Responsive Design*/
 /*Laptop - 1024px*/
 
 @media (max-width: 1150px) {
     body {
         overflow-x: hidden;
+    }
+
+    #top-btn {
+        display: none;
+        visibility: hidden!important;
     }
 
     .jumbotron {
