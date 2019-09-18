@@ -2,10 +2,16 @@ body {
     margin: 0;
     background: #ebebeb;
     overflow-x : hidden!important;
+    outline: none;
 }
 
-a { 
+a{ 
     text-decoration: none!important;
+    outline: none;
+}
+
+button:focus {
+    outline: none;
 }
 .jumbotron {
     background: url('header.jpg');
