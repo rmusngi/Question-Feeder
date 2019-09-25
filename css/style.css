@@ -171,6 +171,22 @@ button:focus {
     outline: none;
 }
 /*Responsive Design*/
+
+/*Laptop - 1440px*/
+@media (max-width: 1366px) {
+
+    .intro {
+        margin-top: -20px;
+    }
+    .jumbotron {
+        height: 60vh;
+    }
+
+    .question-individual {
+        width: 45vw;
+    }
+}
+
 /*Laptop - 1024px*/
 
 @media (max-width: 1150px) {
@@ -280,6 +296,14 @@ button:focus {
     .data {
         display: none;
     }
+}
+
+@media (max-width: 972px) {
+
+    .jumbotron{
+        height: 80vh;
+    }
+
 }
 
 /*Mobile- 760px*/
