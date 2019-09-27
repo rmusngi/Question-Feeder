@@ -1,8 +1,10 @@
-# Question-Feeder
+# Question-Feeder #
 
 This is a special question feeder that uses tabletop.js to serve data to the Brainly answer operations campaigns.
 
-#How to Use the Feed?
+I decided to create this so that users can be served with a custom feed that is in tune with the overall Brainly visual language. 
+
+# How to Use the Feed? #
 
 Prepare the parent feed by creating a list of questions that you want to serve to the user. I suggest you use data given by Google Analytics add on for spreadsheets and schedule them to be refreshed regualry.
 
