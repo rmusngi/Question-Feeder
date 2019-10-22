@@ -14,3 +14,8 @@ $(function () {
 
 
 
+$(document).ready(function() {
+    setTimeout(function(){
+    $('.footer-count').fadeIn(1000);
+    }, 1000);
+});
