@@ -117,7 +117,7 @@ button:focus {
 
 #loadMore {
     margin-top: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 .answer-question a:hover { 
     color: #fff;
@@ -169,19 +169,6 @@ button:focus {
 
 .share-fb a:hover, .share-fb a:active, .share-fb a {
     outline: none;
-}
-.tree-count h1{
-    font-size: 48px!important;
-}
-
-.footer-count {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    display: none;
-}
-.progress-text {
-    margin-bottom: 10px;
 }
 /*Responsive Design*/
 
