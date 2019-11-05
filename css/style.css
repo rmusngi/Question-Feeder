@@ -76,10 +76,12 @@ button:focus {
 
 .subjects {
     margin-top: 20px;
+    text-align: right;
 }
 
 .subject-left {
     padding: 10px;
+    
 }
 
 .subject-icon {
@@ -117,7 +119,7 @@ button:focus {
 
 #loadMore {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 .answer-question a:hover { 
     color: #fff;
@@ -153,6 +155,7 @@ button:focus {
 
 }
 
+
 #top-btn.show {
     opacity: 1;
     visibility: visible;
@@ -169,6 +172,21 @@ button:focus {
 
 .share-fb a:hover, .share-fb a:active, .share-fb a {
     outline: none;
+}
+
+.footer-count {
+    position: fixed;
+    bottom: 0;
+    display: none;
+    width: 100vw;
+}
+
+.footer-count h2 {
+    margin-bottom: 10px;
+}
+
+.footer-data:nth-child(n+2) {
+    display: none;
 }
 /*Responsive Design*/
 
