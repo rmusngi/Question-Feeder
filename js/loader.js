@@ -14,5 +14,5 @@ $(function () {
 
 
 var effectTimer = setTimeout(function() {
-    $('.footer-count').fadeIn(2000);
-}, 100);
+    $('.footer-count').fadeIn(5000);
+}, 500);
