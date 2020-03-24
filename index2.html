@@ -4,19 +4,7 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5LGX57');</script>
-    <!-- End Google Tag Manager -->
-
-    <meta property="og:url" content="https://blog.brainly.ph/trees" />
-
-    <meta property="og:title" content="PLANT A TREE WITH BRAINLY" />
+    <meta property="og:title" content="FirefighterFeed" />
 
     <meta property="og:description"
         content="Join our community's effort into saving the environment! With this initiative, Brainly will plant one tree for every 100 questions you answer from this page." />
@@ -24,6 +12,35 @@
     <meta property="og:image"
         content="https://blog.brainly.ph/wp-content/uploads/2019/09/PLANT-A-TREE-WITH-BRAINLY-1.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
@@ -87,21 +104,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <div class="sg-header__content">
-                <div class="sg-header__left"><a href="index.html" class="sg-home-button"><img
-                            class="sg-home-button__logo-small"
-                            src="https://styleguide.brainly.com/images/logos/brainly-mobile-426ef8718f.svg"><img
-                            class="sg-home-button__logo-big"
-                            src="https://styleguide.brainly.com/images/logos/brainly-761d75d6ea.svg"></a></div>
-                <div class="sg-header__middle">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
+    <div w3-include-html="templates/navbar.html"></div>
     <div class="jumbotron">
         <div class="container">
             <h1 class="intro sg-text-bit sg-text-bit--xlarge">PLANT A TREE <br> WITH BRAINLY</h1>
@@ -454,7 +457,9 @@
     <script src="https://styleguide.brainly.com/images/math-symbols-icons-7c9d6883f2.js"></script>
 
     <!--Scripts-->
-
+    <script>
+        includeHTML();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
         </script>
